@@ -36,9 +36,9 @@
 			<td>{{ $p->pegawai_umur }}</td>
 			<td>{{ $p->pegawai_alamat }}</td>
 			<td>
-				<a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-info">Edit</a>
+				<a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-info"><i class="fa-solid fa-pen-to-square"></i></a>
 				|
-				<a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger">Hapus</a>
+				<a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
 			</td>
 		</tr>
 		@endforeach
