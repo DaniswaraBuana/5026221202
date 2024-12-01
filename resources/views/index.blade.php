@@ -1,6 +1,10 @@
 @extends('template')
 
 @section('tulisan1', 'Data Pegawai')
+@section('linkdata')
+<a href="/pegawai" class="btn btn-dark">Data Pegawai</a>
+<a href="/bus" class="btn btn-secondary">Data bus</a>
+@endsection
 
 @section('link1')
 	<a href="/pegawai/tambah" class="btn btn-primary"> + Tambah Pegawai Baru</a>
@@ -15,7 +19,7 @@
               <input type="text" name="cari" class="form-control" id="cari" placeholder="Cari Pegawai .." value="{{ old('cari') }}">
         	</div>
             <div class="col-sm-4">
-                <input type="submit" value="CARI" class="btn btn-success">
+                <input type="submit" value="CARI" class="btn btn-warning">
               </div>
 		</div>
 	</form>

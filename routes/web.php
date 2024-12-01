@@ -45,3 +45,15 @@ Route::post('/pegawai/update','App\Http\Controllers\PegawaiDBController@update')
 Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiDBController@hapus');
 
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiDBController@cari');
+
+//route CRUD
+Route::get('/bus','App\Http\Controllers\busDBController@index1');
+Route::get('/bus/tambah','App\Http\Controllers\busDBController@tambah1');
+Route::post('/bus/store','App\Http\Controllers\busDBController@store1');
+
+Route::get('/bus/edit/{id}','App\Http\Controllers\busDBController@edit1');
+Route::post('/bus/update','App\Http\Controllers\busDBController@update1');
+
+Route::get('/bus/hapus/{id}','App\Http\Controllers\busDBController@hapus1');
+
+Route::get('/bus/cari','App\Http\Controllers\busDBController@cari1');

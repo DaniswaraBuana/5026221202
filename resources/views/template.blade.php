@@ -14,6 +14,10 @@
 <div class="container">
     <h2>akbar Daniswara cahya buana - 5026221202</h2>
     <h3> @yield('tulisan1') </h3>
+<br/>
+@yield('linkdata')
+<br/>
+<br/>
 
 @yield('link1')
 
@@ -23,6 +27,8 @@
 @yield('konten')
 
 </div>
+
+@yield('script')
 
 
 </body>
