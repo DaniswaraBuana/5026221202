@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/error', function () {
     return "<h1> server Error : ada kesalahan di server </h1>";
@@ -57,3 +57,5 @@ Route::post('/bus/update','App\Http\Controllers\busDBController@update1');
 Route::get('/bus/hapus/{id}','App\Http\Controllers\busDBController@hapus1');
 
 Route::get('/bus/cari','App\Http\Controllers\busDBController@cari1');
+
+Route::get('/','App\Http\Controllers\PageCounterController@index');
