@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KaryawanDBController;
 //use App\Http\Controllers\DosenController;
 
 /*
@@ -59,3 +60,12 @@ Route::get('/bus/hapus/{id}','App\Http\Controllers\busDBController@hapus1');
 Route::get('/bus/cari','App\Http\Controllers\busDBController@cari1');
 
 Route::get('/','App\Http\Controllers\PageCounterController@index');
+
+//route crud eas
+Route::get('/karyawan', [KaryawanDBController::class, 'index'])->name('karyawan.index');
+
+Route::get('/karyawan/create', [KaryawanDBController::class, 'create'])->name('karyawan.create');
+
+Route::post('/karyawan', [KaryawanDBController::class, 'store'])->name('karyawan.store');
+
+Route::delete('/karyawan/{id}', [KaryawanDBController::class, 'destroy'])->name('karyawan.destroy');
